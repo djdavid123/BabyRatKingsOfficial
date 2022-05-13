@@ -207,6 +207,8 @@ export default class Dapp extends React.Component<Props, State> {
             <div className="use-block-explorer">
             Hey, welcome to the official minting website. Lets get ready to start minting !!? <span className="emoji">🚀</span><br />
               You can interact with the smart-contract <strong>directly</strong> through etherscan by clicking this link <a href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a>, without even connecting your wallet to this DAPP!<br />
+              <br />
+              <br />
               <h2> <strong>THE SPECS :</strong> </h2> 
               <br />
               <br />

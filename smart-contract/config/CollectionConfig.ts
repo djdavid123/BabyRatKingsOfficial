@@ -15,16 +15,16 @@ const CollectionConfig: CollectionConfigInterface = {
   hiddenMetadataUri: 'ipfs://QmYibas6qgqL4LxmZ3H696ddLJeSSLSGDrzmUSfwh29t47/hidden.json',
   maxSupply: 10000,
   whitelistSale: {
-    price: 0.05,
-    maxMintAmountPerTx: 1,
+    price: 0.025,
+    maxMintAmountPerTx: 3,
   },
   preSale: {
-    price: 0.07,
-    maxMintAmountPerTx: 2,
+    price: 0.035,
+    maxMintAmountPerTx: 5,
   },
   publicSale: {
-    price: 0.09,
-    maxMintAmountPerTx: 5,
+    price: 0.05,
+    maxMintAmountPerTx: 8,
   },
   contractAddress: "0x3aADade9954a93edf32C9afE5A0817c6ee0DFEcF",
   marketplaceIdentifier: 'my-nft-token',

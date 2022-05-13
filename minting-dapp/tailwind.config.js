@@ -16,7 +16,7 @@ module.exports = {
         },
         titles: colors.blue[600],
         links: {
-          txt: colors.green[600],
+          txt: colors.blue[600],
           hover_txt: colors.stone[700],
         },
         loading_spinner: colors.stone[400],
