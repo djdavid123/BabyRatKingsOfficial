@@ -9,7 +9,7 @@ body {
 
   // Fullscreen background image example
   background-image: url('../../images/background.png');
-  @apply bg-center bg-cover ;
+  @apply bg-center bg-cover bg-contain ;
 }
 
 a, a:link, a:visited {
