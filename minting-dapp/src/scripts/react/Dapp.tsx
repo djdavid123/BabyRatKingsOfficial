@@ -65,7 +65,7 @@ export default class Dapp extends React.Component<Props, State> {
     if (browserProvider?.isMetaMask !== true) {
       this.setError( 
         <>
-          We were not able to detect <strong>MetaMask</strong>. We value <strong>privacy and security</strong> a lot so we limit the wallet options on the DAPP. I hope you can understand!<br />
+          We were not able to detect <strong>MetaMask</strong>. We value <strong>privacy and security</strong> a lot so we limit the wallet options on this DAPP. I hope you can understand!<br />
           <br />
           But don't worry! <span className="emoji">😃</span> You can always interact with the smart-contract through <a href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a> and <strong>we do our best to provide you with the best user experience possible</strong>, even from there.<br />
           <br />
@@ -181,7 +181,7 @@ export default class Dapp extends React.Component<Props, State> {
                   />
                   :
                   <div className="collection-sold-out">
-                    <h2>All NFTs have <strong>SOLD OUT</strong>! <span className="emoji">🥳</span></h2>
+                    <h2>All BRKS have <strong>SOLD OUT</strong>! <span className="emoji">🥳</span></h2>
 
                     You can buy from our beloved holders on <a href={this.generateMarketplaceUrl()} target="_blank">{CollectionConfig.marketplaceConfig.name}</a>.
                   </div>
@@ -194,7 +194,7 @@ export default class Dapp extends React.Component<Props, State> {
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
 
-                Loading collection data...
+                Loading collection. Please wait!
               </div>
             }
           </>
@@ -206,18 +206,19 @@ export default class Dapp extends React.Component<Props, State> {
             
             <div className="use-block-explorer">
             Hey, welcome to the official minting website. Lets get ready to start minting !!? <span className="emoji">🚀</span><br />
-              You can interact with the smart-contract <strong>directly</strong> through etherscan by clicking this link <a href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a>, without even connecting your wallet to this DAPP!<br />
+              <br />
+              You can interact with the smart-contract <strong>directly</strong> through etherscan by clicking this link <a href={this.generateContractUrl()} target="_blank">{this.state.networkConfig.blockExplorer.name}</a>, without even connecting your wallet to this DAPP! (optional) <br />
               <br />
               <br />
               <h2> <strong>THE SPECS :</strong> </h2> 
               <br />
               <br />
-              Each BabyRatKing is 100% unique and been predominantly generated. With over 240 traits im sure you wont be dissapointed. Some of these NFT's will be rare, so mint one and you might get lucky <span className='emoji'>🤞</span>
+              Each BabyRatKing (BRK) is 100% unique and been predominantly generated. With way over 200 traits im sure you wont be dissapointed. Some of these NFT's will hold more rarity = higher value BRKS so mint one and you might get lucky <span className='emoji'>🤞</span>
               <br />
               
               
               <br />
-              Stay safe while minting. Remember never connect your wallet to a suspicious project, listen to your intuition  <span className="emoji">❤️</span>
+              Stay safe while minting. Remember <strong>NEVER</strong> connect your wallet to a suspicious project, listen to your intuition  <span className="emoji">❤️</span>
 
             </div>
 
@@ -225,7 +226,7 @@ export default class Dapp extends React.Component<Props, State> {
               <div className="merkle-proof-manual-address">
                 <h2>Whitelist Proof</h2>
                 <p>
-                  Anyone can generate the proof using any public address in the list, but <strong>only the owner of that address</strong> will be able to make a successful transaction by using it. Make sure to put your address in this section below to make minting alot easier/safer <span className='emoji'>💝</span>
+                  Anyone can generate the proof using any public address in the list, but <strong>only the owner of that address</strong> will be able to make a successful transaction by using it. Make sure to put your address in this section below to make minting alot easier and safer <span className='emoji'>💝</span>
                 </p>
 
                 {this.state.merkleProofManualAddressFeedbackMessage ? <div className="feedback-message">{this.state.merkleProofManualAddressFeedbackMessage}</div> : null}
@@ -317,7 +318,7 @@ export default class Dapp extends React.Component<Props, State> {
     });
 
     if (await this.provider.getCode(CollectionConfig.contractAddress!) === '0x') {
-      this.setError('Could not find the contract, are you connected to the right chain?');
+      this.setError('Could not find the contract, are you connected to the right chain? If not please switch to the correct network.');
 
       return;
     }

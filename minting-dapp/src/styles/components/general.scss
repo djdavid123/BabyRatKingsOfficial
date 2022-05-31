@@ -9,8 +9,7 @@ body {
 
   // Fullscreen background image example
   background-image: url('../../images/background.png');
-  @apply bg-center bg-cover bg-contain ;
-}
+  @apply bg-contain bg-center ;
 
 a, a:link, a:visited {
   @apply font-semibold;
@@ -146,4 +145,5 @@ label {
 
   @apply font-semibold;
   @apply text-label text-sm;
+}
 }
