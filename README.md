@@ -1,5 +1,7 @@
 Hello Welcome to the contract addreess for the BRK collection. Be sure to look around :0
 
+Also FYI This BabyRatKing is an ERC721a contract with significantly lower gas fees running on the Ethereum network.
+
 ## Requirements
 
 ### Software
