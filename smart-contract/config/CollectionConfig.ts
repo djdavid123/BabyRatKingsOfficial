@@ -9,7 +9,7 @@ const CollectionConfig: CollectionConfigInterface = {
   // The contract name can be updated using the following command:
   // yarn rename-contract NEW_CONTRACT_NAME
   // Please DO NOT change it manually!
-  contractName: 'BabyRatKings1',
+  contractName: 'BabyRatKings',
   tokenName: 'BabyRatKings',
   tokenSymbol: 'BRK',
   hiddenMetadataUri: 'ipfs://QmbzAGQE3JaKmQWcgpREvxcskvnxxSagvedaEoL55AwKc9/hidden.json',
