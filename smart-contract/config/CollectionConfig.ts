@@ -12,7 +12,7 @@ const CollectionConfig: CollectionConfigInterface = {
   contractName: 'BabyRatKings',
   tokenName: 'BabyRatKings',
   tokenSymbol: 'BRK',
-  hiddenMetadataUri: 'ipfs://QmbzAGQE3JaKmQWcgpREvxcskvnxxSagvedaEoL55AwKc9/hidden.json',
+  hiddenMetadataUri: 'ipfs://QmTxs2ZyVkNqxsMvUSyu5hPpMDB4NGFD2TmqQCuqrWjkr7/hidden.json',
   maxSupply: 10000,
   whitelistSale: {
     price: 0.03,
@@ -26,7 +26,7 @@ const CollectionConfig: CollectionConfigInterface = {
     price: 0.05,
     maxMintAmountPerTx: 15,
   },
-  contractAddress: "0xBa3561cA0574FC3116e5f3D8aa407CE906C07b2D",
+  contractAddress: "0xEa9d6f1f7F85e23160158a4CEbA9696Cb76098c6",
   marketplaceIdentifier: 'my-nft-token',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
