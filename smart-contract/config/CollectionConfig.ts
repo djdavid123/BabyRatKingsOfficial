@@ -12,7 +12,7 @@ const CollectionConfig: CollectionConfigInterface = {
   contractName: 'BabyRatKings',
   tokenName: 'BabyRatKings',
   tokenSymbol: 'BRK',
-  hiddenMetadataUri: 'ipfs://QmTxs2ZyVkNqxsMvUSyu5hPpMDB4NGFD2TmqQCuqrWjkr7/hidden.json',
+  hiddenMetadataUri: 'ipfs://QmbzAGQE3JaKmQWcgpREvxcskvnxxSagvedaEoL55AwKc9/hidden.json',
   maxSupply: 10000,
   whitelistSale: {
     price: 0.03,
