@@ -26,7 +26,7 @@ const CollectionConfig: CollectionConfigInterface = {
     price: 0.05,
     maxMintAmountPerTx: 15,
   },
-  contractAddress: "0xEa9d6f1f7F85e23160158a4CEbA9696Cb76098c6",
+  contractAddress: "0x154b65792e4F206b001BefC110cE2cDab6B326bC",
   marketplaceIdentifier: 'my-nft-token',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
