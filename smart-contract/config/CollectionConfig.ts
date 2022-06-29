@@ -15,15 +15,15 @@ const CollectionConfig: CollectionConfigInterface = {
   hiddenMetadataUri: 'ipfs://QmbzAGQE3JaKmQWcgpREvxcskvnxxSagvedaEoL55AwKc9/hidden.json',
   maxSupply: 10000,
   whitelistSale: {
-    price: 0.065,
+    price: 0.08,
     maxMintAmountPerTx: 2,
   },
   preSale: {
-    price: 0.08,
+    price: 0.095,
     maxMintAmountPerTx: 5,
   },
   publicSale: {
-    price: 0.09,
+    price: 0.125,
     maxMintAmountPerTx: 10,
   },
   contractAddress: "0x3aADade9954a93edf32C9afE5A0817c6ee0DFEcF",
